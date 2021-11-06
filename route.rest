@@ -1,0 +1,38 @@
+### home
+GET http://localhost:3000
+### login user
+POST http://localhost:3000
+Content-Type: application/json
+
+{
+  "name": "mina"
+}
+### get all question
+GET http://localhost:3000/questions
+### create question
+POST http://localhost:3000/questions
+Content-Type: application/json
+
+{
+  "body": "so2al sab3?",
+  "answers": [
+    {
+       "answer": "agaba1",
+       "correct": false
+     },
+     {
+       "answer": "agaba2",
+       "correct": false
+     },
+     {
+       "answer": "agaba3",
+       "correct":  true
+     },
+     {
+       "answer": "agaba4",
+       "correct": false
+     }
+     ]
+}
+### exam
+GET http://localhost:3000/exam
